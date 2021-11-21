@@ -1,0 +1,211 @@
+body {
+    counter-reset: number 0; 
+}
+header {
+    background: #FFF;
+}
+header nav#header-pc a:nth-child(2) {
+    border-bottom: solid 4px #f1c51e ;
+}
+section {
+    margin: 0;
+}
+.wrapper {
+    background: url(../img/top/bg_top.jpg) no-repeat left -30px;
+    padding-top: 100px;
+}
+.container-fee {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    margin-bottom: 0;
+    padding: 0 24px 60px 24px;
+}
+.display-sp {
+    display: none;
+}
+.heading_about {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 1.4;
+}
+
+/* 説明 */
+#lead .container-lead {
+    position: relative;
+    margin: 80px auto;
+    padding: 0;
+}
+
+/* 料金プラン表 */
+#fee table {
+    border: solid 3px #333;
+}
+#fee table th {
+    border: none;
+    background: #333;
+    color: #FFF;
+    vertical-align: middle;
+    font-size: 1.8rem;
+}
+#fee table td {
+    border: none;
+    padding: 0;
+    background: #FFF;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+#fee .admission td {
+    padding: 0 16px;
+    font-size: 3rem;
+}
+#fee table.admission td {
+    
+}
+#fee .container-plan {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+#fee .container-plan table {
+    width: 49%;
+}
+#fee .container-plan table th {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#fee .container-plan table td {
+    display: block;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    min-height: 290px;
+}
+#fee .container-plan table th h2 {
+    letter-spacing: .1em;
+    font-size: 2rem;
+}
+#fee .container-plan table:first-child th h2 {
+    color: #f1c51e;
+}
+#fee .container-plan table:last-child th h2 {
+    color: #DDD;
+}
+#fee .container-plan table td span {
+    font-size: 2.8rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    vertical-align: top;
+}
+#fee .container-plan table td i {
+    font-size: 1.4rem;
+    font-style: normal;
+    min-height: 290px;
+}
+#fee .container-plan table td strong {
+    font-size: 6.6rem;
+}
+#fee .container-plan table td .fee {
+    padding: 22px 8px;
+}
+#fee .container-plan table td .fee .textcontainer-right {
+    line-height: 1;
+}
+#fee .container-plan table td p.text {
+    padding: 16px;
+    border-top: dashed 2px #333;
+    text-align: left;
+}
+/* 必ずご確認ください */
+#fee .container-coution {
+    position: relative;
+    margin: 80px 0;
+    padding: 48px 0 24px 0;
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+}
+#fee .container-coution strong {
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    background: #FFF;
+    padding: 0 8px;
+    font-weight: bold;
+    font-size: 2rem;
+    transform: translate(-50%,0);
+}
+#fee .container-coution h3 {
+    margin: 0 0 14px 0;
+    font-size: 2.4rem;
+}
+#fee .container-coution ul {
+    margin: 0 0 24px 0;
+}
+#fee .container-coution ul li {
+    margin-left: 20px;
+    line-height: 3rem;
+    list-style-type: disc;
+}
+
+
+/* ----------------------------------------------
+
+                タブレット（ ~1024px )
+
+---------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .text-large {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+    .container-midium{
+        margin-bottom: 0;
+        padding: 30px 24px;
+    }   
+    #fee .container-plan {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #fee .container-plan table {
+        width: 100%;
+        margin: 24px 0 0 0;
+    }
+    #fee .container-plan table td {
+        min-height: auto;
+        font-size: 1.6rem;
+    }
+    #fee .container-coution strong {
+        font-size: 1.6rem;
+        width: 63%;
+        text-align: center;
+    }
+    #fee .container-coution h3 {
+        font-size: 2rem;
+    }
+    #fee .container-plan table th {
+        padding: 12px 0;
+    }
+    #fee .container-plan table th h2 {
+        font-size: 1.8rem;
+    }
+    #fee .container-plan table td span {
+        display: block;
+        writing-mode: inherit;
+        text-orientation: inherit;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    #fee .container-plan table td .fee {
+        text-align: right;
+    }
+    #fee .container-plan table td strong {
+        font-size: 4.8rem;
+    }
+}
+

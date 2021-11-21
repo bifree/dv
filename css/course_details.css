@@ -1,0 +1,821 @@
+header {
+    background: #FFF;
+}
+header nav#header-pc a:nth-child(3) {
+    border-bottom: solid 4px #f1c51e ;
+}
+.wrapper {
+    padding-top: 100px;
+}
+section:nth-of-type(1) {
+    padding-top: 160px;
+}
+.lead_course ul {
+    margin: 32px 0;
+}
+
+.lead_course ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.lead_course ul li {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+}
+.lead_course ul li a {
+    width: 230px
+}
+.nav_inner ul li a.selected {
+    background: #c30d23;
+    color: #FFF;
+}
+.text-color-es {
+    color: #c30d23;
+}
+.text-color-pg {
+    color: #8dc21f;
+}
+.text-color-fx {
+    color: #009fe8;
+}
+.text-color-en {
+    color: #744697;
+}
+.text-color-wd {
+    color: #e75297;
+}
+/* 背景 */
+.bg-es {
+    background: #c30d23;
+}
+.bg-pg {
+    background: #8dc21f !important;
+}
+.bg-fx {
+    background: #009fe8 !important;
+}
+.bg-en {
+    background: #744697 !important;
+}
+.bg-wd {
+    background: #e75297 !important;
+}
+/* ボーダーカラー */
+.border-es {
+    border-color: #c30d23 !important;
+}
+.border-pg {
+    border-color: #8dc21f !important;
+}
+.border-fx {
+    border-color: #009fe8 !important;
+}
+.border-en {
+    border-color: #744697 !important;
+}
+.border-wd {
+    border-color: #e75297 !important;
+}
+.border-on {
+    border-color: #f1c51e !important;
+}
+
+
+
+/* メインビジュアル */
+#course-mv > .container-midium {
+    margin-bottom: 0 !important;
+}
+#course-mv h1 {
+    padding: 0 0 0 16px;
+    border-left: solid 8px #c30d23;
+    font-size: 5rem;
+}
+#course-mv .container_trapezoid_image {
+    width: 100%;
+}
+#course-mv .img_trapezoid {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    margin-top: -500px;
+    z-index: 0;
+}
+#course-mv .img_trapezoid::before {
+    content: '';
+    border-top: solid 550px transparent;
+    border-right: solid 150px #FFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+/* 
+    content: '';
+    border-right: solid 150px #FFF;
+    border-bottom: solid 500px transparent;
+    position: absolute;
+    right: -89px;
+    bottom: 0; */
+}
+#course-mv .img_trapezoid img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    z-index: -1;
+}
+#course-mv .container_trapezoid .trapezoid {
+    position: relative;
+    width: 50%;
+    height: 480px;
+    float: right;
+    margin: 0 auto 100px;
+    padding: 48px 0 0 0;
+    background-color: #c30d23;
+    z-index: 1;
+}
+#course-mv .container_trapezoid .trapezoid::before {
+    content: '';
+    border-top: solid 0px transparent;
+    border-right: solid 50vw #c30d23;
+    border-bottom: solid 480px #c30d23;
+    border-left: solid 150px transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#course-mv .container_trapezoid .trapezoid.bg-pg::before {
+    border-right: solid 50vw #8dc21f;
+    border-bottom: solid 480px #8dc21f;
+}
+#course-mv .container_trapezoid .trapezoid.bg-fx::before {
+    border-right: solid 50vw #009fe8;
+    border-bottom: solid 480px #009fe8;
+}
+#course-mv .container_trapezoid .trapezoid.bg-en::before {
+    border-right: solid 50vw #744697;
+    border-bottom: solid 480px #744697;
+}
+#course-mv .container_trapezoid .trapezoid.bg-wd::before {
+    border-right: solid 50vw #e75297;
+    border-bottom: solid 480px #e75297;
+}
+
+#course-mv .container_trapezoid .trapezoid span {
+    position: relative;
+    color: rgba(255,255,255,.2);
+    font-weight: bold;
+    font-size: 5rem;
+    font-style: italic;
+    z-index: 3;
+}
+
+#course-mv .container_trapezoid .trapezoid p {
+    position: relative;
+    color: #FFF;
+    font-size: 6rem;
+    z-index: 3;
+}
+#course-mv .container_trapezoid .trapezoid p:nth-of-type(2) {
+    font-size: 4rem;
+}
+
+/* 説明 */
+#course-explanation {
+    margin: 0;
+}
+#course-explanation h2 {
+    margin: 160px 0;
+}
+#course-explanation .container_explanation {
+    display: flex;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+#course-explanation .container_explanation .icon {
+    width: 200px;
+    min-height: 200px;
+    background: #c30d23 url(../img/course/icon_es.png) no-repeat center center;
+    background-size: contain;
+}
+#course-explanation .container_explanation .icon.icon-pg {
+    background: #8dc21f url(../img/course/icon_pg.png) no-repeat center center;
+    background-size: contain;
+}
+#course-explanation .container_explanation .icon.icon-fx {
+    background: #009fe8 url(../img/course/icon_fx.png) no-repeat center center;
+    background-size: contain;
+}
+#course-explanation .container_explanation .icon.icon-en {
+    background: #744697 url(../img/course/icon_en.png) no-repeat center center;
+    background-size: contain;
+}
+#course-explanation .container_explanation .icon.icon-wd {
+    background: #e75297 url(../img/course/icon_wd.png) no-repeat center center;
+    background-size: contain;
+}
+#course-explanation .container_explanation p  {
+    width: calc(100% - 200px);
+    padding: 0 32px;
+    color: #333;
+    line-height: 2;
+}
+
+/* メニュー */
+#course-menu {
+    position: relative;
+    margin: 0;
+    background: #c30d23;
+    overflow: hidden;
+}
+#course-menu .list_curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 32px;
+}
+#course-menu .list_curriculum .curriculum {
+    width: 48%;
+    position: relative;
+    margin: 32px 1%;
+    padding: 32px;
+    border: solid 2px #FFF;
+}
+#course-menu .list_curriculum .curriculum h3 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -24px;
+    width: 70%;
+    background: #c30d23;
+    color: #FFF;
+    font-size: 1.8rem;
+    padding: 8px;
+    transform: translate(-50%,0);
+    line-height: 0.5;
+    text-align: center;
+    line-height: 1.2;
+}
+#course-menu .list_curriculum .curriculum h3 span {
+    color: #fff;
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+#course-menu .list_curriculum .curriculum ul li {
+    position: relative;
+    color: #FFF;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    padding: 8px 8px 8px 16px;
+}
+#course-menu .list_curriculum .curriculum ul li::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: solid 1px #FFF;
+}
+/* curriculum - esports */
+#course-menu .list_curriculum .curriculum-100 {
+    width: 100%;
+    position: relative;
+    margin: 32px 1%;
+    padding: 32px;
+    border: solid 2px #FFF;
+    text-align: center;
+}
+#course-menu .list_curriculum .curriculum-100 h3 {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -24px;
+    background: #c30d23;
+    color: #FFF;
+    font-size: 1.8rem;
+    padding: 8px;
+    transform: translate(-50%,0);
+    line-height: 0.5;
+    text-align: center;
+    line-height: 1.2;
+}
+#course-menu .list_curriculum .curriculum-100 h3 span {
+    color: #fff;
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+#course-menu .list_curriculum .curriculum-100 ul li {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #FFF;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+#course-menu .list_curriculum .curriculum-100 ul li::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: solid 1px #FFF;
+}
+#course-menu .list_curriculum .curriculum-100 strong {
+    display: inline-block;
+    line-height: 1.6;
+    margin: 0 auto 24px;
+    text-align: center;
+    border-bottom: solid 1px #FFF;
+    color: #FFF;
+    font-size: 1.8rem;
+    padding: 0 0 8px 0;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto {          
+    display: -ms-flexbox;
+    display: flex;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto .howto { 
+    -ms-flex: 1;
+    flex: 1;         
+    text-align: left;
+    color: #FFF;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto .howto p:first-child {   
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto .howto p {   
+    margin: 16px 0 0 0;       
+    text-align: left;
+    color: #FFF;
+    font-size: 1.4rem;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto .howto p a {   
+    color: #FFF;
+    font-weight: normal;
+}
+#course-menu .list_curriculum .curriculum-100 .container-howto .howto span { 
+    line-height: 1.8; 
+    display: block;        
+    padding : 0 0 0 40px;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+/* 詳細 */
+#course-detail {
+    position: relative;
+    margin-top: 80px;
+}
+#course-detail::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150vh 400px;
+    border-color: transparent transparent transparent rgb(0 0 0 / 3%);
+    z-index: -1;
+}
+#course-detail .container_detail .detail {
+    margin: 0 0 64px 0;
+}
+#course-detail .container_detail .detail h3 {
+    margin-bottom: 24px;
+}
+#course-detail .container_detail .detail .schedule {
+    margin: 0 0 16px 0;
+}
+#course-detail .container_detail .detail .schedule .timetable {
+    float: left;
+    margin: 0 40px 40px 0;
+    max-width: 350px;
+}
+#course-detail .container_detail .detail .schedule .timetable .title-timetable {
+    margin: 0 0 32px 0;
+    padding: 0 0 0 16px;
+    border-left: solid 4px #c30d23;
+    font-weight: bold;
+}
+#course-detail .container_detail .detail .schedule .timetable table {
+    background: none;
+    border: none;
+}
+#course-detail .container_detail .detail .schedule .timetable table tr th {
+    width: 50px;
+    padding: 0;
+    border: none;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+#course-detail .container_detail .detail .schedule .timetable table tr:nth-child(1) th p {
+    padding: 0 0 0 16px;
+}
+#course-detail .container_detail .detail .schedule .timetable table tr th p span {
+    padding: 0 0 0 16px;
+}
+#course-detail .container_detail .detail .schedule .timetable table tr td {
+    padding: 8px 16px;
+    border: none;
+    border-left: solid 1px #D6D6D6;
+}
+#course-detail .container_detail .detail .schedule .timetable .container-individual i {
+    display: block;
+    margin: 0 0 4px 0;
+    font-style: normal;
+}
+#course-detail .container_detail .detail .schedule .timetable .container-individual p:nth-of-type(2) {
+    margin: 16px 0 0 0;
+    padding: 8px;
+    background: #FFF;
+    border: solid 3px #DDD;
+}
+ul.list_check li {
+    position: relative;
+    padding: 0 0 0 32px;
+}
+ul.list_check li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url(../img/course/icon_check-es.png) no-repeat;
+    background-size: contain;
+    transform: translate(0,-50%);   
+}
+ul.list_check.list_check-pg li::before {
+    background-image: url(../img/course/icon_check-pg.png);
+}
+ul.list_check.list_check-fx li::before {
+    background-image: url(../img/course/icon_check-fx.png);
+}
+ul.list_check.list_check-en li::before {
+    background-image: url(../img/course/icon_check-en.png);
+}
+ul.list_check.list_check-wd li::before {
+    background-image: url(../img/course/icon_check-wd.png);
+}
+
+/* 講師 */
+#course-coach {
+  position: relative;
+}
+#course-coach::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150vh 400px;
+    border-color: transparent rgb(0 0 0 / 3%) transparent transparent;
+    mix-blend-mode: hue;
+}
+#course-coach h3 {
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    left: -10px;
+    padding: 16px;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .1em;
+    transform: skew(-21deg) rotate(-5deg);
+    z-index: 2;
+}
+#course-coach .container_coach {
+    margin: 0 16px;
+    padding: 32px;
+    box-shadow: 3px 12px 14px rgba(0,0,0,.16) ;
+}
+#course-coach .container_coach .imgbox {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#course-coach .container_coach .name {
+    font-size: 4rem;
+}
+#course-coach .container_coach table {
+    border: none
+}
+#course-coach .container_coach table tr {
+    border: none;
+}
+#course-coach .container_coach table tr th {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    max-width: 100px;
+    padding: 4px;
+    border: none;
+    letter-spacing: 0em;
+    text-align: center;
+}
+#course-coach .container_coach table tr td {
+    display: inline-block;
+    width: 70%;
+    margin: 0 8px 8px 0;
+    padding: 4px;
+    border: none;
+}
+#course-coach .container_coach p.message_ttl {
+    font-size: 3rem;
+    line-height: 1.6;
+}
+#course-coach .container_coach p.message {
+    margin: 0 0 16px 0;
+}
+#course-coach .container_coach p.badge {
+    display: inline;
+}
+/* swiper.js上書き */
+.swiper-container {
+    overflow: inherit !important;
+}
+.swiper-wrapper {
+    margin: 0 auto;
+}
+.swiper-slide {
+    background: #FFF;
+    height: auto;
+}
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+.swiper-pagination-bullet-active {
+    background: #333;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -40px;
+}
+
+/* リンク */
+#course-links {
+    position: relative;
+}
+#course-links { 
+    padding: 100px 0 0 0;
+}
+#course-links ul {
+    display: flex;
+    justify-content: center;
+}
+#course-links ul li {
+    flex: 1;
+    text-align: center;
+}
+#course-links ul li a {
+    width: 80%;
+}
+#course-links ul:nth-of-type(2) {
+    padding: 32px;
+}
+#course-links h4 {
+    display: block;
+    margin: 0 0 32px 0;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------
+
+                タブレット（ ~1024px ）
+
+---------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    /* メインビジュアル */
+    #course-mv > .container-midium {
+        margin-bottom: 32px !important;
+    }
+    #course-mv h1 {
+        font-size: 3rem;
+    }
+    #course-mv .img_trapezoid {
+        height: 300px;
+        margin-top: -340px;
+    }
+    #course-mv .img_trapezoid::before {
+         border-top: solid 300px transparent;
+    }
+    #course-mv .img_trapezoid img {
+
+    }
+    #course-mv .container_trapezoid .trapezoid {
+        width: 45%;
+        height: 300px;
+    }
+    #course-mv .container_trapezoid .trapezoid::before {
+        content: '';
+        border-top: solid 0px transparent;
+        border-right: solid 45vw #c30d23;
+        border-bottom: solid 300px #c30d23;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #course-mv .container_trapezoid .trapezoid span {
+        font-size: 4rem;
+    }
+    #course-mv .container_trapezoid .trapezoid p {
+        font-size: 4rem;
+    }
+    #course-mv .container_trapezoid .trapezoid p:nth-of-type(2) {
+        font-size: 2rem;
+    }
+    /* メニュー */
+    #course-menu .list_curriculum .curriculum {
+        width: 100%;
+        margin: 24px 0;
+    }
+    #course-menu .list_curriculum .curriculum ul li {
+        font-size: 1.4rem;
+    }    
+    #course-menu .list_curriculum .curriculum h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    } 
+}
+/* ----------------------------------------------
+
+                スマートフォン（ ~700px ）
+
+---------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding-top: 70px;
+    }
+    section {
+        margin-bottom: 0;
+    }
+    /* メインビジュアル */
+    #course-mv .img_trapezoid {
+        width: 70%;
+        height: 180px;
+        margin-top: -240px;
+    }
+    #course-mv .img_trapezoid::before {
+        border-right: solid 50px #FFF;
+        border-top: solid 200px transparent;
+    }
+    #course-mv .img_trapezoid img {
+        
+    }
+    #course-mv .container_trapezoid .trapezoid {
+        width: 55%;
+        height: 180px;
+        padding: 32px 0 0 0;
+    }
+    #course-mv .container_trapezoid .trapezoid::before {
+        content: '';
+        border-top: solid 0px transparent;
+        border-right: solid 55vw #c30d23;
+        border-bottom: solid 200px #c30d23;
+        border-left: solid 50px transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #course-mv .container_trapezoid .trapezoid.bg-pg::before {
+        border-right: solid 55vw #8dc21f;
+        border-bottom: solid 200px #8dc21f;
+    }
+    #course-mv .container_trapezoid .trapezoid.bg-fx::before {
+        border-right: solid 55vw #009fe8;
+        border-bottom: solid 200px #009fe8;
+    }
+    #course-mv .container_trapezoid .trapezoid.bg-en::before {
+        border-right: solid 55vw #744697;
+        border-bottom: solid 200px #744697;
+    }
+    #course-mv .container_trapezoid .trapezoid.bg-wd::before {
+        border-right: solid 55vw #e75297;
+        border-bottom: solid 200px #e75297;
+    }
+    #course-mv .container_trapezoid .trapezoid span {
+        font-size: 1.8rem;
+    }
+    #course-mv .container_trapezoid .trapezoid p {
+        line-height: 1.6;
+        font-size: 2.4rem;
+    }
+    #course-mv .container_trapezoid .trapezoid p:nth-of-type(2) {
+        font-size: 1.6rem;
+    }
+
+    /* 説明 */
+    #course-explanation h2{
+        margin: 40px 24px;
+    }
+    #course-explanation .container_explanation {
+        flex: none;
+        flex-wrap: wrap;
+    }
+    #course-explanation .container_explanation .icon {
+        order: 2;
+        width: 100%;
+    }
+    #course-explanation .container_explanation p {
+        order: 1;
+        width: 100%;
+        padding: 0 32px 32px 32px;
+    }
+    /* メニュー */
+    #course-menu .list_curriculum .curriculum-100 .container-howto {          
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #course-menu .list_curriculum .curriculum-100 .container-howto .howto:first-child {    
+        margin: 0 0 24px 0;
+    }
+    #course-menu .list_curriculum .curriculum-100 .container-howto .howto span {
+        padding: 0 0 0 20px;
+    }
+    #course-menu .list_curriculum .curriculum-100 ul li {
+        display: block;
+        text-align: left;
+    }
+    /* 詳細 */
+    #course-detail .container_detail .detail .schedule .timetable .title-timetable {
+        margin: 0 0 16px 0;
+    }
+    #course-detail .container_detail .detail .schedule .timetable table tr th,
+    #course-detail .container_detail .detail .schedule .timetable table tr td {
+        display: table-cell;
+        font-size: 1.4rem;
+        padding: 4px 8px;
+    }
+    #course-detail .container_detail .detail .schedule .timetable .container-individual i {
+        font-size: 1.2rem;
+    }
+    #course-detail .container_detail .detail .schedule .timetable .container-individual p:nth-of-type(2) {
+        margin: 16px 0 0 0;
+    }   
+    /* 講師 */
+    #course-coach h3 {
+        top: -60px;
+        padding: 16px 16px 16px 32px;
+        font-size: 3rem;
+        text-align: left;
+    }
+    #course-coach .container_coach {
+        position: relative;
+        margin: 0 4px;
+        padding: 16px;
+        box-shadow: 1.5px 6px 7px rgba(0,0,0,.16) ;
+    }
+    #course-coach .container_coach .name {
+        font-size: 2rem;
+        padding: 16px 0;
+    }
+    #course-coach .container_coach .message {
+        font-size: 1.4rem;
+        margin: 8px 0 0 0;
+    }   
+    #course-coach .container_coach .imgbox {
+        width: 80%;
+    }
+    #course-coach .container_coach table tr th {
+        display: inline-block;
+        padding: 2px;
+        margin: 0 0 8px 0;
+        box-sizing: border-box;
+    }
+    #course-coach .container_coach table tr td {
+        display: inline-block;
+        width: auto;
+        font-size: 1.4rem;
+    }
+    /* リンク */
+    #course-links ul {
+        display: block;
+    }
+    #course-links ul li {
+        margin: 0 0 16px 0;
+    }
+    #course-links ul li a {
+        width: 100%;
+    }
+    
+}

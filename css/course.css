@@ -1,0 +1,339 @@
+header {
+    background: #FFF;
+}
+header nav#header-pc a:nth-child(3) {
+    border-bottom: solid 4px #f1c51e ;
+}
+.wrapper {
+    padding-top: 100px;
+}
+#course-lead h1 br {
+    display: none;
+}
+section {
+    margin-bottom: 96px;
+}
+section:nth-of-type(1) {
+    margin-bottom: 180px;
+    padding-top: 160px;
+}
+.container_course {
+    position: relative;
+}
+.container_course > .container-midium {
+    margin-bottom: 24px !important;
+}
+.container_course h2 {
+    margin: 0 0 32px 0;
+    padding: 0 0 0 16px;
+    border-left: solid 8px #c30d23;
+    font-size: 5rem;
+}
+#course-pg.container_course h2 {
+    border-color: #8dc21f;
+}
+#course-fx.container_course h2 {
+    border-color: #009fe8;
+}
+#course-en.container_course h2 {
+    border-color: #744697;
+}
+#course-wd.container_course h2 {
+    border-color: #e75297;
+}
+.container_course .container_trapezoid_image {
+    width: 100%;
+}
+.container_course .img_trapezoid {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    margin-top: -360px;
+    z-index: 0;
+}
+.container_course .img_trapezoid::before {
+    content: '';
+    border-top: solid 550px transparent;
+    border-right: solid 150px #FFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* 
+    content: '';
+    border-right: solid 150px #FFF;
+    border-bottom: solid 500px transparent;
+    position: absolute;
+    right: -89px;
+    bottom: 0; */
+}
+.container_course .img_trapezoid img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    z-index: -1;
+}
+.container_course .container_trapezoid .trapezoid {
+    float: right;
+    position: relative;
+    width: 55%;
+    height: 380px;
+    margin: 0 auto 100px;
+    padding: 48px 0 0 0;
+    background-color: #c30d23;
+    z-index: 1;
+}
+#course-pg.container_course .container_trapezoid .trapezoid {
+    background-color: #8dc21f;
+}
+#course-fx.container_course .container_trapezoid .trapezoid {
+    background-color: #009fe8;
+}
+#course-en.container_course .container_trapezoid .trapezoid {
+    background-color: #744697;
+}
+#course-wd.container_course .container_trapezoid .trapezoid {
+    background-color: #e75297;
+}
+.container_course .container_trapezoid .trapezoid::before {
+    content: '';
+    border-top: solid 0px transparent;
+    border-right: solid 55vw #c30d23;
+    border-bottom: solid 380px #c30d23;
+    border-left: solid 150px transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#course-pg.container_course .container_trapezoid .trapezoid::before {
+    border-right-color: #8dc21f;
+    border-bottom-color: #8dc21f;
+}
+#course-fx.container_course .container_trapezoid .trapezoid::before {
+    border-right-color: #009fe8;
+    border-bottom-color: #009fe8;
+}
+#course-en.container_course .container_trapezoid .trapezoid::before {
+    border-right-color: #744697;
+    border-bottom-color: #744697;
+}
+#course-wd.container_course .container_trapezoid .trapezoid::before {
+    border-right-color: #e75297;
+    border-bottom-color: #e75297;
+}
+.container_course .container_trapezoid .trapezoid span {
+    position: relative;
+    color: rgba(255,255,255,.2);
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: italic;
+    z-index: 3;
+}
+.container_course .container_trapezoid .trapezoid p {
+    position: relative;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 5rem;
+    z-index: 3;
+}
+.container_course .container_trapezoid .trapezoid p:nth-of-type(2) {
+    font-size: 3rem;
+}
+.container_course .container_text {
+    position: relative;
+    float: right;
+    width: 40%;
+    margin-top: -216px;
+    padding: 16px;
+    z-index: 1;
+}
+.container_course .container_text p {
+    margin: 0 0 16px 0;
+}
+/* 背景 */
+.bg-triagnle-left::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 160vh 400px;
+    border-color: transparent transparent transparent rgb(0 0 0 / 3%);
+    z-index: -1;
+}
+.bg-triagnle-right::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 160vh 400px;
+    border-color: transparent rgb(0 0 0 / 3%) transparent transparent;
+    z-index: -1;
+}
+
+/* 体験コース */
+#course-taiken {
+    display: flex;
+    justify-content: center;
+    margin: 160px 0 0 0;
+}
+#course-taiken > div {
+    flex: 1;
+    width: 50%;
+    padding: 62px 32px;
+    text-align: center;
+}
+#course-taiken .taiken {
+    position: relative;
+    background: #f1c51e;
+}
+#course-taiken .taiken * {
+    font-weight: bold;
+}
+#course-taiken .taiken span:nth-child(1) {
+    color:rgba(0,0,0,.3);
+}
+#course-taiken .logo {
+    background: #FFF url(../img/top/bg_top.jpg) no-repeat center center;
+    background-size: cover; 
+}
+#course-taiken .logo {
+    text-align: center;
+}
+#course-taiken .logo > img {
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+
+/* ----------------------------------------------
+
+タブレット（ ~1024px ）
+
+---------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    /* メインビジュアル */
+    .container_course > .container-midium {
+        margin-bottom: 32px !important;
+    }
+    .container_course h2 {
+        font-size: 3rem;
+    }
+    /* 背景 */
+    .bg-triagnle-left::before {
+        top: -20px;
+        left: -20%;
+        border-width: 200px 50vh 200px;
+    }
+    .bg-triagnle-right::before {
+        top: -20px;
+        left: -20%;
+        border-width: 200px 50vh 200px;
+    }
+
+
+}
+/* ----------------------------------------------
+
+                スマートフォン（ ~700px ）
+
+---------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding-top: 70px !important;
+    }
+    section {
+        margin-bottom: 80px;
+    }
+    #course-lead h1 br {
+        display: block;
+    }
+    .text-large {
+        font-size: 1.4rem;
+    }
+    .text-large br {
+        display: none;
+    }
+    section:nth-of-type(1) {
+        margin-bottom: 80px;
+        padding-top: 80px;
+    }    
+    #course-lead .textcontainer-center {
+        text-align: left;
+    }
+    .container_course .img_trapezoid {
+        width: 70%;
+        height: 200px;
+        margin-top: -240px;
+    }
+    .container_course .img_trapezoid::before {
+        border-right: solid 50px #FFF;
+        border-top: solid 200px transparent;
+    }
+    .container_course .container_trapezoid .trapezoid {
+        width: 55%;
+        height: 200px;
+        padding: 32px 0 0 0;
+    }
+    .container_course .container_trapezoid .trapezoid::before {
+        content: '';
+        border-top: solid 0px transparent;
+        border-right: solid 55vw #c30d23;
+        border-bottom: solid 200px #c30d23;
+        border-left: solid 50px transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .container_course .container_trapezoid .trapezoid span {
+        font-size: 1.8rem;
+    }
+    .container_course .container_trapezoid .trapezoid p {
+        line-height: 1.4;
+        margin: 8px 0 0 0;
+        font-size: 2.6rem;
+    }
+    #course-en.container_course .container_trapezoid .trapezoid p:nth-of-type(1){
+        font-size: 2.2rem;
+    }
+    .container_course .container_trapezoid .trapezoid p:nth-of-type(2) {
+        font-size: 1.8rem;
+    }
+    .container_course .container_text {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container_course .container_text a {
+       display: block;
+    }
+    /* 体験コース */
+    #course-taiken {
+        flex-direction: column;
+        margin: 32px 0 0 0;
+    }
+    #course-taiken > div {
+        width: 100%;
+    }
+    #course-taiken > div .text-venti br {
+        display: none;
+    }
+    
+}

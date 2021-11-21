@@ -1,0 +1,453 @@
+body {
+    counter-reset: number 0; 
+}
+header {
+    background: #FFF;
+}
+header nav#header-pc a:nth-child(2) {
+    border-bottom: solid 4px #f1c51e ;
+}
+section {
+    margin: 0;
+}
+.wrapper {
+    padding-top: 100px;
+}
+.container-midium{
+    margin-bottom: 0;
+    padding: 0 24px 60px 24px;
+}
+.display-sp {
+    display: none;
+}
+.heading_about {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 1.4;
+}
+.icon-step {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+h2 {
+    padding: 0 0 30px 0;
+    font-size: 4rem;
+    text-align: center;
+}
+.liner {
+    display: inline;
+    background: linear-gradient(transparent 60%, #ffdb0063 60%);
+    font-weight: bold;
+}
+p.liner-white {
+    display: inline;
+    background: linear-gradient(transparent 60%, #ffffff61 60%);
+    font-weight: bold;
+}
+
+
+/* 説明 */
+#lead .container-lead {
+    position: relative;
+    margin: 80px auto 0;
+    padding: 0;
+}
+#lead .container-lead ul li {
+    padding: 0;
+}
+#lead .container-lead ul li:nth-of-type(1) {
+    padding: 0 32px 0 0;
+}
+#lead .container-lead ul li .text-midium {
+    padding: 32px 0 0 0;
+}
+
+/* 体験レッスンの予約 */
+#lesson {
+    position: relative;
+    background: #f1c51e;
+}
+#lesson .lead-lesson {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#lesson::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 80px 120px 0 120px;
+    border-color: #f1c51e transparent transparent transparent;
+    left: 50%;
+    bottom: -80px;
+    transform: translate(-50%,0);
+}
+.list-step {
+    margin: 120px 0 0 0;
+}
+.list-step li {
+    z-index: 0;
+}
+.list-step li {
+    position: relative;
+    margin: 0 0 50px 0;
+}
+.list-step li .container-step {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid 2px #333;
+    background: #FFF;
+}
+.list-step li .container-step::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #333 transparent transparent transparent;
+}
+.list-step li .container-step::after,
+.list-step li .container-step50::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: #333 transparent transparent transparent;
+    left: 50%;
+    bottom: -28px;
+    position: absolute;
+    transform: translate(-50%,0);
+    z-index: -1;
+}
+.list-step li span.number {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #f1c51e;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.list-step li .container-step .description {
+    padding: 16px;
+    background: #f3f3f3;
+}
+.list-step li .container-step .step-text {
+    -ms-flex: 1;
+    flex: 1;
+    padding: 50px;
+}
+.list-step li .container-step .step-thumb {
+    -ms-flex: 1;
+    flex: 1;
+    padding: 50px;
+}
+.list-step li .container-step .step-text p,
+.container-step-50 > .container-step50 .step-text p {
+    margin: 0 0 12px 0;
+    font-weight: bold;
+}
+.container-step-50 {
+    display: -ms-flexbox;
+    display: flex;
+}
+.container-step-50 > .container-step50 {
+    position: relative;
+    width: 49%;
+    padding: 50px;
+    border: none;
+    background: #FFF;
+}
+.container-step-50 > .container-step50:nth-child(1) {
+    margin-right: 1%;
+}
+.container-step-50 > .container-step50:nth-child(2) {
+    margin-left: 1%;
+}
+.container-step-50 > .container-step50::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #333 transparent transparent transparent;
+    color: #f1c51e;
+}
+.text-bold {
+    font-weight: bold;
+}
+.container-step-50 > .container-step50 .step-thumb {
+    margin: 16px 0;
+}
+.list-step li dl {
+    float: left;
+    width: 48%;
+    margin: 16px 1%;
+    background: #FFF;
+}
+.list-step li dl dt {
+    background: #333;
+    color: #FFF;
+    padding: 8px 4px;
+    width: 100%;
+    display: block;
+    border: solid 1px #333;
+    text-align: center;
+}
+.list-step li dl dd {
+    line-height: 1.8;
+    padding: 8px 0;
+}
+
+
+/* プランのご契約 */
+#plan {
+    padding-bottom: 100px ;
+    background: #333;
+}
+#plan .icon-step {
+    padding-top: 120px;
+}
+#plan h2 {
+    color: #FFF;
+}
+#plan .lead-plan {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+#plan .btn-plan {
+    border-radius: 50px;
+    padding: 16px 32px;
+    border: solid 2px #FFF;
+    color: #FFF;
+    font-size: 2rem;
+    margin: 50px auto 0;
+    display: inline-block;
+}
+#plan .btn-plan:hover {
+    border: solid 2px #f1c51e;
+    color: #f1c51e;
+    background: none;
+}
+#plan .btn-reserve {
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+    margin: 50px auto 0;
+    padding: 16px 32px;
+    border-radius: 50px;
+    background: #f1c51e;
+    color: #000;
+    font-size: 2rem;
+}
+#plan .container-step,
+#plan .container-step-50 > .container-step50 {
+    border: none;
+}
+#plan .container-step-50 > .container-step50::before {
+    border-color: #f1c51e transparent transparent transparent;
+}
+#plan .list-step li .container-step::before,
+#plan .container-step-50 > .container-step50::before{
+    border-color: #f1c51e transparent transparent transparent;
+}
+#plan .list-step li .container-step {
+    margin: 16px 0 0 0;
+}
+#plan .list-step li .container-step::after {
+    color: #333;
+}
+#plan .list-step li span.number {
+    color: #333;
+}
+#plan .list-step li .container-step::before,
+.container-step-50 > .container-step50::before {
+    top: 0px;
+    left: 0px;
+}
+
+#plan .container-step50.container-img {
+    padding: 0;
+    border: none;
+    background: none;
+}
+#plan .container-step50.container-img::before {
+    display: none;
+}
+#plan .text-yellow {
+    color: #f1c51e;
+    font-weight: bold;
+}
+#plan .list-step li .container-step::after, 
+#plan .list-step li .container-step50::after {
+    border-color: #FFF transparent transparent transparent;
+}
+
+.container-img img {
+    width: 100%;
+}
+.text-white {
+    color: #FFF;
+}
+
+
+
+
+/* プルダウン */
+.acd-check {
+    display: none;
+}
+.acd-label {
+    display: block;
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-top: 24px;
+    cursor: pointer;
+}
+.acd-label::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0,-50%);
+}
+.acd-content {
+    height: 0;
+    padding: 15px 30px;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+.acd-content p.text {
+    font-weight: bold;
+}
+.acd-check:checked + .acd-label + .acd-content {
+    height: auto;
+    padding: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* ----------------------------------------------
+
+                タブレット（ ~1024px )
+
+---------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .display-pc {
+        display: none;
+    }
+    .display-sp {
+        display: block;
+    }
+    .container-midium{
+        margin-bottom: 0;
+        padding: 30px 24px;
+    }   
+    #lead .container-lead {
+        margin: 40px auto;
+    }     
+    h2 {
+        font-size: 3rem;
+    }
+    .icon-step {
+        width: 35px;
+        display: block;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    #lesson::before {
+        border-style: solid;
+        border-width: 50px 90px 0 90px;
+        left: 50%;
+        bottom: -50px;
+    }
+    #plan .lead-plan,#lesson .lead-lesson {
+        font-size: 1.8rem;
+    }
+    .list-step {
+        margin: 60px 0 0 0;
+    }
+    .list-step li .container-step,
+    .container-step-50 {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .list-step li .container-step::before,
+    .container-step-50 > .container-step50::before {
+         border-width: 60px 60px 0 0;
+    }
+    .container-step-50 > .container-step50 {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+    .list-step li span.number {
+        top: 8px;
+        left: 8px;
+        font-size: 2rem;
+    }
+    .list-step li .container-step .step-text,
+    .container-step-50 > .container-step50 {
+        padding: 36px;
+    }
+    .list-step li .container-step .step-thumb {
+        padding: 0 30px 30px 30px;
+    }
+    .list-step li .container-step .step-thumb img {
+        width: 100%;
+    }
+    .list-step li .container-step .acd-content .step-thumb {
+        padding: 0;
+    }
+    .container-step-50 > .container-step50 {
+        
+        display: block;
+    }
+    .container-step-50 > .container-step50:nth-child(1) {
+        margin-right: 0;
+    }
+    .container-step-50 > .container-step50:nth-child(2) {
+        margin-left: 0;
+    }
+    .list-step li .container-step50 {
+        margin: 20px 0;
+    }
+    #plan .list-step li .container-step::after, 
+    #plan .list-step li .container-step50::after {
+        display: none;
+    }
+    .text-white.display-sp {
+        margin: 60px 0;
+    }
+}
+
+/* ----------------------------------------------
+
+                スマホ（ ~700px )
+
+---------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding-top: 70px;
+    }

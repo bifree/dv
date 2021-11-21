@@ -1,0 +1,162 @@
+header {
+    background: #FFF;
+}
+header nav#header-pc a:nth-child(2) {
+    border-bottom: solid 4px #f1c51e ;
+}
+.wrapper {
+    background: url(../img/top/bg_top.jpg) no-repeat left -30px;
+    padding-top: 100px;
+}
+section {
+    margin-bottom: 124px;
+}
+.heading_about {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 1.4;
+}
+
+/* 特徴 */
+#feature {
+}
+#feature .container_feature {
+    position: relative;
+    margin: 0 0 80px 0;
+    padding: 80px 0 0 0;
+}
+#feature .container_feature ul li {
+    padding: 0;
+}
+#feature .container_feature ul li:nth-of-type(1) {
+    padding: 0 32px 0 0;
+}
+#feature .container_feature ul li .text-midium {
+    padding: 32px 0 0 0;
+}
+
+/* 運営会社 */
+#operating {
+    position: relative;
+}
+#operating::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150vh 400px;
+    border-color: transparent transparent transparent rgb(0 0 0 / 3%);
+    z-index: -1;
+}
+#operating .container_company_name {
+    display: table;
+    margin: 0 0 40px 0;
+}
+#operating .container_company_name img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 340px;
+}
+#operating .container_company_name > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+#operating .container_company_name h3 {
+    display: inline-block;
+    margin: 0 0 24px 0;
+    padding: 16px 32px;
+    letter-spacing: .1em;
+    border: solid 1px #333;
+    background: #FFF;
+}
+#operating .container_company_name p {
+   margin: 0 0 24px 0;
+}
+#operating .container_company_adress {
+    margin: 0 0 40px 0;
+}
+#operating .container_company_adress li {
+    padding: 0;
+}
+
+/* 関連サービス */
+#relation {
+    position: relative;
+}
+#relation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150vh 400px;
+    border-color: transparent rgb(0 0 0 / 3%) transparent transparent;
+    z-index: -1;
+}
+#relation::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: -20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150vh 400px;
+    border-color: transparent transparent transparent rgb(0 0 0 / 3%);
+    z-index: -1;
+}
+
+.list_relation li a:nth-of-type(1) {
+    display: block;
+    margin: 0 0 16px 0;
+}
+.list_relation li p {
+    margin: 0 0 24px 0;
+}
+
+/* ----------------------------------------------
+
+                スマートフォン（ ~700px ）
+
+---------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding-top: 70px;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+    #feature {
+        background-position: 44% -160px;
+    }
+    #feature .container_feature {
+        margin: 0 0 24px 0;
+        padding: 48px 0 0 0;
+    }
+    .heading_about {
+        font-size: 2.4rem;
+    }
+    #operating .container_company_name img {
+        width: 280px;
+    }
+    #operating .container_company_name > div {
+        display: block;
+        margin: 16px 0;
+    }
+    #feature .container_feature ul li img {
+        margin: 0 0 32px 0;
+    }
+    #feature .container_feature ul li .text-midium {
+        padding: 16px 0;
+    }
+    #relation .list_relation li p {
+        margin: 0 0 12px 0px;
+    }
+}
